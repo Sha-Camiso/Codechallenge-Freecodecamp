@@ -47,6 +47,11 @@ function reusableFunction(){
   console.log("Hi World");
 }
 
+
+function timesFive(num) {
+  return num * 5;
+}
+
 reusableFunction();
 
 
