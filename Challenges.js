@@ -357,3 +357,38 @@ function sum(arr, n) {
     return sum(arr, n - 1) + arr[n - 1];
   }
 }
+
+function convertToInteger(str) {
+return parseInt(str);
+}
+
+convertToInteger("56");
+
+  return num > 0 ? "positive"
+    : num < 0 ? "negative"
+    : "zero";
+}
+
+// Only change code below this line
+function countdown(n){
+    if (n < 1) {
+    return [];
+  } else {
+    const arr = countdown(n - 1);
+    arr.unshift(n);
+    return arr;
+  }
+
+}
+// Only change code above this line
+
+function rangeOfNumbers(startNum, endNum) {
+  
+  if (endNum - startNum === 0) {
+    return [startNum];
+  } else {
+    var numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
