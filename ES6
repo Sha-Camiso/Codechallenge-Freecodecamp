@@ -11,3 +11,29 @@ const increment = (number, value=1) => number + value;
 console.log(increment(5,2));
 console.log(increment(5));
 // Only change code above this line
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+
+const {today,tomorrow} = HIGH_TEMPERATURES;
+// Only change code above this line
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+  
+const { today:highToday, tomorrow:highTomorrow}=HIGH_TEMPERATURES;
+// Only change code above this line
+
+ const {today: {low:lowToday,high:highToday}}=LOCAL_FORECAST;
+ 
+ 
