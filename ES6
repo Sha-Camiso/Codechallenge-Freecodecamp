@@ -37,3 +37,10 @@ const { today:highToday, tomorrow:highTomorrow}=HIGH_TEMPERATURES;
  const {today: {low:lowToday,high:highToday}}=LOCAL_FORECAST;
  
  
+let a = 8, b = 6;
+[a, b] = [b, a];
+
+ const failureItems = [];
+  for (let i = 0; i < arr.length; i++) {
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+  }
