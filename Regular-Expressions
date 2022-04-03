@@ -55,3 +55,9 @@ let nonAlphabetRegex = /\W/g; // Change this line
 let result = quoteSample.match(nonAlphabetRegex).length;
 
 
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/; // Change this line
+let result = ohRegex.test(ohStr);
+
+let pwRegex =  /(?=\w{6})(?=\w*\d{2})/;
+
