@@ -1,0 +1,66 @@
+
+ function reverseString(str) {
+  return str
+    .split("")
+    .reverse()
+    .join("");
+}
+
+reverseString("hello");
+
+function factorialize(num) {
+  if (num === 0) {
+    return 1;
+  }
+  return num * factorialize(num - 1);
+}
+
+factorialize(5);
+
+function findLongestWordLength(str) {
+  let words = str.split(' ');
+  let maxLength = 0;
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > maxLength) {
+      maxLength = words[i].length;
+    }
+  }
+
+  return maxLength;
+}
+
+function largestOfFour(arr) {
+  const results = [];
+  for (let i = 0; i < arr.length; i++) {
+    let largestNumber = arr[i][0];
+    for (let j = 1; j < arr[i].length; j++) {
+      if (arr[i][j] > largestNumber) {
+        largestNumber = arr[i][j];
+      }
+    }
+    results[i] = largestNumber;
+  }
+
+  return results;
+}
+
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+
+  return str.slice(str.length - target.length) === target;
+}
+
+confirmEnding("Bastian", "n");
+
+function repeatStringNumTimes(string, times) {
+  var repeatedString = "";
+  while (times > 0) {
+    repeatedString += string;
+    times--;
+  }
+  return repeatedString;
+}
+repeatStringNumTimes("abc", 3);
+
