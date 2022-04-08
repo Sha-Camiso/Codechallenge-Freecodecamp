@@ -64,3 +64,30 @@ function repeatStringNumTimes(string, times) {
 }
 repeatStringNumTimes("abc", 3);
 
+function truncateString(str, num) {
+    if (str.length > num) {
+        let subStr = str.substring(0, num);
+        return subStr + "...";
+    } else {
+        return str;
+    }
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+function booWho(bool) {
+
+  return typeof bool === "boolean";
+  return bool;
+}
+
+booWho(null);
+
+function titleCase(str) {
+  const newTitle = str.split(" ");
+  const updatedTitle = [];
+  for (let st in newTitle) {
+    updatedTitle[st] = newTitle[st][0].toUpperCase() + newTitle[st].slice(1).toLowerCase();
+  }
+  return updatedTitle.join(" ");
+}
