@@ -1,3 +1,11 @@
+return original.concat(attach);
+return original.concat(attach);
+ 
+ 
+ return cities.slice(0, 3);
+
+return anim.slice(beginSlice, endSlice);
+
 const tea4TeamFCC = getTea(40);
 
 // tabs is an array of titles of each site open within the window
